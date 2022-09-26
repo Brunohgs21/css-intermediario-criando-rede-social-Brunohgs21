@@ -164,7 +164,7 @@ function insereInfoModal(info) {
     const pTittle = document.createElement('p')
     const pText = document.createElement('p')
 
-    div1.classList = 'div-info flex align-center gap2 botton-li'
+    div1.classList = 'div-info flex align-center gap2 botton-li margin'
     figure.classList = 'userImg'
     div2.classList = 'flex flex-col gap1'
     pTittle.classList = 'titleStyle'

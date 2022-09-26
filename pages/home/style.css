@@ -34,11 +34,6 @@ header {
 
 }
 
-/* .modal-header button{
-    position: fixed;
-    top: 40px;
-} */
-
 .modal-close {
     width: 40px;
     height: 0px;
@@ -47,6 +42,7 @@ header {
     color: #ADB5BD;
     font-size: 20px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .modal-body {

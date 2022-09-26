@@ -27,7 +27,7 @@
 
 
 .info-User {
-    width: 126px;
+    width: 135px;
     height: 16px;
     font-family: 'Inter';
     font-style: normal;
@@ -55,6 +55,7 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 40px;
+    margin: 15px;
 }
 
 .textStyle {
@@ -63,4 +64,5 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
+    margin: 15px;
 }
