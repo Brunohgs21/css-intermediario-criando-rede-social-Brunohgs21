@@ -1,8 +1,9 @@
-.userImg{
+.userImg {
     width: 3.25rem;
     height: 3.25rem;
 }
-.userImg img{
+
+.userImg img {
     width: 100%;
     height: 100%;
 }

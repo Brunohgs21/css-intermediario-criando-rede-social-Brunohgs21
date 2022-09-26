@@ -70,20 +70,20 @@ for (let i = 0; i < buttonsLike.length; i++) {
     let botao = buttonsLike[i]
     botao.addEventListener('click', (event) => {
         let toggle = botao.classList.toggle('showLike')
-        if(event.target.src == 'http://127.0.0.1:5500/css-intermediario-criando-rede-social-Brunohgs21-2/assets/img/Vector%20(1).png'){
+        if (event.target.src == 'http://127.0.0.1:5500/css-intermediario-criando-rede-social-Brunohgs21-2/assets/img/Vector%20(1).png') {
             event.target.src = 'http://127.0.0.1:5500/css-intermediario-criando-rede-social-Brunohgs21-2/assets/img/Vector%20(2).png'
-        }else{
+        } else {
             event.target.src = 'http://127.0.0.1:5500/css-intermediario-criando-rede-social-Brunohgs21-2/assets/img/Vector%20(1).png'
         }
-        
+
         let numLike = countLike[i]
         let numSalvo = parseInt(numLike.innerHTML)
 
-         if (toggle) {
+        if (toggle) {
 
-             numLike.innerHTML = numSalvo + 1
+            numLike.innerHTML = numSalvo + 1
 
-         } else {
+        } else {
             numLike.innerHTML = numSalvo - 1
 
         }
@@ -164,12 +164,12 @@ function insereInfoModal(info) {
     const pTittle = document.createElement('p')
     const pText = document.createElement('p')
 
-    div1.classList ='div-info flex align-center gap2 botton-li'
-    figure.classList ='userImg'
-    div2.classList= 'flex flex-col gap1'
+    div1.classList = 'div-info flex align-center gap2 botton-li'
+    figure.classList = 'userImg'
+    div2.classList = 'flex flex-col gap1'
     pTittle.classList = 'titleStyle'
     pText.classList = 'textStyle'
-    
+
     img.src = image
     img.alt = user
     infoNome.innerText = user
@@ -177,35 +177,18 @@ function insereInfoModal(info) {
     pTittle.innerText = title
     pText.innerText = text
 
-    
 
 
-    div2.append(pTittle,pText)
-    span.append(infoNome,infoStack)
+
+    div2.append(pTittle, pText)
+    span.append(infoNome, infoStack)
     figure.appendChild(img)
-    div1.append(figure,span)
-    section.append(div1,div2)
+    div1.append(figure, span)
+    section.append(div1, div2)
 
     console.log(section)
-   return section
+    return section
 }
 
 
 
-/*
-<section>
-<div class="flex align-center">
-<figure class="userImg">
-<img src="${imagem}" alt="">
-</figure>
-<span>
-<p>${nome}</p>
-<p>${info}</p>
-</span>
-</div>
-<div>
-<p>${titulo}</p>
-<p>${texto}</p>
-</div>
-</section>
-          */

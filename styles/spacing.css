@@ -1,33 +1,34 @@
-.gap1{
+.gap1 {
     gap: 1.5rem;
 }
 
-.botton1{
+.botton1 {
     margin-bottom: 0.625rem;
 }
-.botton2{
+
+.botton2 {
     margin-bottom: 2.5rem;
 }
 
 
-.overflow{
+.overflow {
     overflow: auto;
 }
 
 
-.paddingUser{
-   padding:  var(--padding-user);
+.paddingUser {
+    padding: var(--padding-user);
 }
 
-.gap2{
+.gap2 {
     gap: var(--gap-user);
 }
 
 
-.botton-li{
+.botton-li {
     margin-bottom: 2rem;
 }
 
-.padding-left{
+.padding-left {
     padding: 1.25rem;
 }

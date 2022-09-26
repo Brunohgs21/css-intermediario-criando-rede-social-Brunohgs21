@@ -30,9 +30,10 @@ header {
     justify-content: flex-end;
     align-items: center;
     background-color: transparent;
-    
-    
+
+
 }
+
 /* .modal-header button{
     position: fixed;
     top: 40px;
@@ -73,53 +74,62 @@ header {
     }
 }
 
-.usersPosts{
+.usersPosts {
     gap: 3.125rem;
 }
-.sugests-style{
+
+.sugests-style {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: var(--gap-user) ;
+    gap: var(--gap-user);
     margin-bottom: 2.5rem;
 }
-.ul-sugests{
+
+.ul-sugests {
     display: flex;
     flex-direction: row;
     padding-left: 1.25rem;
     overflow: auto;
 }
 
-@media(min-width: 500px){
-    main{
+@media(min-width: 500px) {
+    main {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
         padding-left: 50px;
     }
-    .desktop-posting-section{
+
+    .desktop-posting-section {
         width: 55%;
     }
-    .desktop-aside{
+
+    .desktop-aside {
         width: 35%;
         position: fixed;
         left: 65%;
-        top: 120px;    }
-    .desktop-posts{
+        top: 120px;
+    }
+
+    .desktop-posts {
         width: 55%;
     }
-    .ul-sugests{
+
+    .ul-sugests {
         flex-direction: column;
     }
-    .sugests-style{
+
+    .sugests-style {
         flex-direction: row;
     }
-    .navbar{
+
+    .navbar {
         padding: 30px 100px 30px 100px;
     }
-    .modal{
+
+    .modal {
         width: 760px;
-       
+
     }
 }
-

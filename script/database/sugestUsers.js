@@ -27,7 +27,7 @@ function list(lista, referenciaHtml) {
 
 
         let templateMontado = criarTemplateSugests(usuarioAtual)
-        
+
 
         referenciaHtml.appendChild(templateMontado)
 
@@ -53,35 +53,35 @@ function criarTemplateSugests(usuario) {
     const button = document.createElement('button')
     const span = document.createElement('span')
 
-    div1.classList ='sugests-style'
+    div1.classList = 'sugests-style'
     figure.classList = 'userImg'
-    button.classList ='button-seguindo'
+    button.classList = 'button-seguindo'
     container.classList = 'flex flex-row  justify-start gap2'
-    pUser.classList ='name-User'
+    pUser.classList = 'name-User'
     //span.classList = 'span-button'
     pInfo.classList = 'info-User'
 
     button.innerText = 'Seguir'
     img.src = image
-    if(info == undefined){
+    if (info == undefined) {
         pInfo.innerHTML = ''
-    }else{
+    } else {
 
         pInfo.innerHTML = info
     }
     pUser.innerHTML = name
 
     span.appendChild(button)
-    div2.append(pUser,pInfo)
+    div2.append(pUser, pInfo)
     figure.appendChild(img)
-    container.append(figure,div2)
-    div1.append(container,span)
+    container.append(figure, div2)
+    div1.append(container, span)
     li.append(div1)
 
-    
 
 
-    
+
+
     return li
 }/*
       <div class="flex flex-row  align-center botton1">
