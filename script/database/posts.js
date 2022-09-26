@@ -144,7 +144,7 @@ function criarTemplatePosts(post) {
           <div class='flex gap1'>
           <button class='insere-modal btn-abrirPost'id='post_${id}' data-control-modal="open-modal">Abrir Post</button>
           <span class='flex flex-row align-center'>
-          <button class='button-like'><img src='../../assets/img/Vector (1).png'/></button> <span class='count-like'>${likes}</span>
+          <button class='button-like'><img src='./assets/img/Vector (1).png'/></button> <span class='count-like'>${likes}</span>
           </span>
           </div>
           </div>
