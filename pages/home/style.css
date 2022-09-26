@@ -117,5 +117,9 @@ header {
     .navbar{
         padding: 30px 100px 30px 100px;
     }
+    .modal{
+        width: 760px;
+       
+    }
 }
 
