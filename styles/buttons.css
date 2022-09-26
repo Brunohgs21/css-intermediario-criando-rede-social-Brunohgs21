@@ -11,17 +11,25 @@
 }
 
 
+.btn-abrirPost {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 10px;
+    width: 96x;
+    height: 38px;
+    background: #212529;
+    border: 2px solid #212529;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
 
-
-.button-modal-close {
-    width: 24px;
-    height: 24px;
-    border-radius: 100%;
-    background-color: transparent;
-    border: 1px solid var(--color-white-fixed);
-    color: var(--color-white-fixed);
-    margin: 9px;
-    cursor: pointer;
 }
 
 .btnPostar {
@@ -31,24 +39,11 @@
     align-items: center;
     padding: 0px 12px;
     gap: 10px;
-
     width: 69px;
     height: 38px;
-
-    /* Grey Scale/grey4 */
-
     background: #DEE2E6;
-    /* Grey Scale/grey4 */
-
     border: 2px solid #DEE2E6;
     border-radius: 4px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-
 }
 
 .btnPostar:hover {
@@ -76,4 +71,8 @@
 .button-like {
     border: transparent;
     background-color: transparent;
+}
+
+.desktop-button-post{
+    width: 90%;
 }

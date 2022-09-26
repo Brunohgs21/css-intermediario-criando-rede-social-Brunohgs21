@@ -53,7 +53,7 @@ function criarTemplateSugests(usuario) {
     const button = document.createElement('button')
     const span = document.createElement('span')
 
-    div1.classList ='flex flex-col   gap2 justify-start botton2'
+    div1.classList ='sugests-style'
     figure.classList = 'userImg'
     button.classList ='button-seguindo'
     container.classList = 'flex flex-row  justify-start gap2'

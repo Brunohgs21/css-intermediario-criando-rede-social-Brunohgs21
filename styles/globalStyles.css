@@ -36,33 +36,34 @@ input {
     align-items: flex-start;
     padding: 16px 20px;
 
-    width: 90vw;
+    width: 90%;
     height: 52px;
 
-    /* Grey Scale/white-fixed */
-
     background: #FFFFFF;
-    /* Grey Scale/grey4 */
 
     border: 2px solid #DEE2E6;
     border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
 
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 textarea {
     height: 130px;
-    width: 90vw;
+    width: 90%;
     left: 0px;
     top: 0px;
     border-radius: 4px;
     padding: 28px 21px 29px 21px;
     background: #FFFFFF;
     border: 2px solid #DEE2E6;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
 
 }

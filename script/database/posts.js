@@ -139,10 +139,10 @@ function criarTemplatePosts(post) {
           </span>
           </div>
           <div class='flex flex-col gap1'>
-          <p>${titulo}</p>
-          <p>${texto}</p>
+          <p class='titleStyle'>${titulo}</p>
+          <p class='textStyle'>${texto}</p>
           <div class='flex gap1'>
-          <button class='insere-modal'id='post_${id}' data-control-modal="open-modal">Abrir Post</button>
+          <button class='insere-modal btn-abrirPost'id='post_${id}' data-control-modal="open-modal">Abrir Post</button>
           <span class='flex flex-row align-center'>
           <button class='button-like'><img src='../../assets/img/Vector (1).png'/></button> <span class='count-like'>${likes}</span>
           </span>

@@ -92,90 +92,7 @@ for (let i = 0; i < buttonsLike.length; i++) {
 }
 
 
-//Modal
-/*  <section id='modal-container'>
-    <div class="flex flex-col">
-    <nav><button id='close_modal' class='button-modal-close'>X</button></nav>
-    <main class="flex flex-col">
-      <section class="flex flex-row  align-center botton1">
-        <figure class="userImg">
-          <img src="" alt="">
-        </figure>
-        <div>
-          <p></p>
-          <p></p>
-        </div>
-      </section>
-      <section class="flex flex-col align-center botton1">
-        <h1></h1>
-        <p></p>
-      </section>
-    </main>
-    </div>
-    </section>
-    */
 
-/*function createModal(){
-    const modalContainer = document.createElement('section')
-    const contentContainer = document.createElement('div')
-    const buttonContainer = document.createElement('nav')
-    const closeModal = document.createElement('button')
-    const modalMain = document.createElement('main')
-    const userSection = document.createElement('section')
-    const figure = document.createElement('figure')
-    const Img = document.createElement('img')
-    const divInfoUser = document.createElement('div')
-    const userName = document.createElement('p')
-    const userStack = document.createElement('p')
-    const postSection = document.createElement('section')
-    const postTittle = document.createElement('h1')
-    const postText = document.createElement('p')
-
-    figure.classList = 'userImg'
-    contentContainer.classList = 'flex flex-col'
-
-    closeModal.classList = 'button-modal-close'
-    closeModal.innerText = 'x'
-    closeModal.id = 'close_modal'
-
-    modalMain.classList = 'flex flex-col'
-    userSection.classList = 'flex flex-row  align-center botton1'
-    postSection.classList = 'flex flex-col align-center botton1'
-
-    modalContainer.id = 'modal-container'
-
-
-    postSection.append(postTittle,postText)
-    divInfoUser.append(userName,userStack)
-    figure.appendChild(Img)
-    userSection.append(figure,divInfoUser)
-    modalMain.append(userSection,postSection)
-    buttonContainer.appendChild(closeModal)
-    contentContainer.append(buttonContainer, modalMain)
-    modalContainer.append(contentContainer)
-
-    
-    return modalContainer
-}
-
-function showModal(){
-
-    const modalButton = document.querySelectorAll("[data-control-modal]")
-    const mainContainer = document.getElementById('main-container')
-    for(let i = 0; i < modalButton.length; i++){
-        let button = modalButton[i]
-        console.log(button)
-
-        button.addEventListener('click', ()=>{
-            const modal = createModal()
-    
-            mainContainer.appendChild(modal)
-        })
-    }
-}
-    
-//Parei aqui, tentando dar append do modal pra minha tela
-*/
 
 const buttonsControllersModal = document.querySelectorAll("[data-control-modal]")
 
@@ -247,9 +164,11 @@ function insereInfoModal(info) {
     const pTittle = document.createElement('p')
     const pText = document.createElement('p')
 
-    div1.classList ='flex align-center gap2 botton-li'
+    div1.classList ='div-info flex align-center gap2 botton-li'
     figure.classList ='userImg'
     div2.classList= 'flex flex-col gap1'
+    pTittle.classList = 'titleStyle'
+    pText.classList = 'textStyle'
     
     img.src = image
     img.alt = user
