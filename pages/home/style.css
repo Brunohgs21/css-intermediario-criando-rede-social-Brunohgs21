@@ -80,6 +80,7 @@ header {
     justify-content: flex-start;
     gap: var(--gap-user);
     margin-bottom: 2.5rem;
+    align-items: center;
 }
 
 .ul-sugests {
