@@ -169,6 +169,8 @@ function insereInfoModal(info) {
     div2.classList = 'flex flex-col gap1'
     pTittle.classList = 'titleStyle'
     pText.classList = 'textStyle'
+    infoNome.classList = 'name-User'
+    infoStack.classList = 'info-User'
 
     img.src = image
     img.alt = user
