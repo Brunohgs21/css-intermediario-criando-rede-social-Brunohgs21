@@ -1,0 +1,79 @@
+.showFollow {
+    background-color: blue;
+    color: white;
+    height: 28px;
+    width: 89px;
+    left: 0px;
+    top: 72px;
+    border-radius: 2px;
+    padding: 0px 12px 0px 12px;
+
+}
+
+
+
+
+.button-modal-close {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid var(--color-white-fixed);
+    color: var(--color-white-fixed);
+    margin: 9px;
+    cursor: pointer;
+}
+
+.btnPostar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 10px;
+
+    width: 69px;
+    height: 38px;
+
+    /* Grey Scale/grey4 */
+
+    background: #DEE2E6;
+    /* Grey Scale/grey4 */
+
+    border: 2px solid #DEE2E6;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+}
+
+.btnPostar:hover {
+    color: #DEE2E6;
+    background-color: var(--color-grey-1);
+}
+
+.span-button {
+    display: flex;
+    width: 80vw;
+}
+
+.button-seguindo {
+
+    border: 2px solid #DEE2E6;
+    border-radius: 4px;
+    height: 28px;
+    width: 89px;
+    left: 0px;
+    top: 72px;
+    border-radius: 2px;
+    padding: 0px 12px 0px 12px;
+}
+
+.button-like {
+    border: transparent;
+    background-color: transparent;
+}

@@ -1,19 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>TechPosters - Home</title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-  </body>
-  <script src="/script/database/users.js"></script>
-  <script src="/script/database/posts.js"></script>
-  <script src="/script/database/sugestUsers.js"></script>
-  <script src="index.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../styles/globalStyles.css" />
+  <link rel="stylesheet" href="../../styles/navbar.css">
+  <link rel="stylesheet" href="../../styles/images.css">
+  <link rel="stylesheet" href="../../styles/positioning.css">
+  <link rel="stylesheet" href="../../styles/spacing.css">
+  <link rel="stylesheet" href="../../styles/buttons.css">
+  <link rel="stylesheet" href="../../styles/texts.css">
+  <link rel="stylesheet" href="./style.css" />
+  <title>TechPosters - Home</title>
+</head>
+
+<body>
+  <header class="botton1">
+    <nav class="navbar">
+      <div class="navbar-items">
+        <figure>
+          <img src="../../assets/img/logo.svg" alt="">
+        </figure>
+        <div class='navbar-links' action="">
+          <a class="navbar-link">Sair</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="main-container">
+    <section class="flex flex-col">
+      <div class="flex flex-row  align-center  gap2 paddingUser botton2">
+        <figure class="userImg">
+          <img src="../../assets/img/user1.svg" alt="">
+        </figure>
+        <div>
+          <p class="name-User">Samuel Leão</p>
+          <p class="info-User">Front and Engineer</p>
+        </div>
+      </div>
+      <div class=" form flex flex-col gap1 paddingUser botton2">
+        <input name='title' type="text" placeholder="Digitar título do post">
+        <textarea name="text" id="" cols="30" rows="10" placeholder="Digitar descrição do post"></textarea>
+        <span class="flex justify-end">
+          <button class="btnPostar">Postar</button>
+        </span>
+      </div>
+    </section>
+    <aside class="botton1">
+      <p class="sugests">Sugestões para você seguir</p>
+      <ul class="userIds flex flex-row overflow padding-left">
+       
+      </ul>
+    </aside>
+    <p class="title-Post">Posts</p>
+    <ul class="usersPosts flex flex-col overflow">
+      
+    </ul>
+    
+    <div class="modal-wrapper" id="open-modal">
+      <div class="modal">
+          <div class="modal-header">
+              <button class="modal-close" data-control-modal="open-modal">X</button>
+          </div>
+          <div class="modal-body">
+              
+          </div>
+      </div>
+    </div>
+    
+  </main>
+</body>
+<script src="../../script/database/users.js"></script>
+<script src="../../script/database/sugestUsers.js"></script>
+<script src="../../script/database/posts.js"></script>
+<script src="index.js"></script>
 </html>

@@ -1,0 +1,78 @@
+.sugests {
+    width: 290px;
+    height: 24px;
+
+    /* Fonts/Titles/title2 */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+
+    /* Grey Scale/grey1 */
+
+    color: #212529;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 2.938rem;
+    padding-left: 1.25rem;
+}
+
+
+.name-User {
+    width: 170px;
+    height: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+.info-User {
+    width: 126px;
+    height: 16px;
+
+    /* Fonts/Texts/text2 */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+
+    /* Grey Scale/grey2 */
+
+    color: #495057;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.title-Post {
+    width: 385px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    padding-left: 1.25rem;
+    margin-bottom: 3.25rem;
+}

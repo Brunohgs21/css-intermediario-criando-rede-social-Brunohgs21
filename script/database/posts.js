@@ -23,3 +23,132 @@ const posts = [
     text: "A Programação Funcional é uma orientação focada na programação declarativa. Conhecendo mais a programação funcional a partir de códigos podemos nos deparar de primeira com o conceito mais central da programação funcional, que é o conceito de funções puras, isso significa que o retorno de uma função deve depender apenas dos seus parâmetros de entrada. Com classes podemos editar os valores das propriedades dos objetos criados ou ainda criar métodos para essas propriedades, ainda por cima podemos definir se vão ser públicos (vão para o objeto) ou estáticos (não são instanciados, ou seja, não vão para o objeto), e isso tem seu lado bom e ruim.",
   },
 ];
+const usersPosts = document.querySelector('.usersPosts')
+
+function createPosts(usuarios, listaPosts, referenciaHtml) {
+  let idUsuario = 0
+  let usuario = 0
+  let post = []
+  let newPost = {
+    user: 0,
+    info: 0,
+    img: 0,
+    title: 0,
+    text: 0,
+
+  }
+  for (let i = 0; i < usuarios.length; i++) {
+
+    idUsuario = usuarios[i].id
+    usuario = usuarios[i]
+
+    for (let j = 0; j < listaPosts.length; j++) {
+      let idPost = listaPosts[j].user
+      let posting = listaPosts[j]
+      if (idUsuario == idPost) {
+        newPost = {
+          user: usuario.user,
+          info: usuario.stack,
+          img: usuario.img,
+          title: posting.title,
+          text: posting.text,
+          id: idUsuario,
+        }
+        post.push(newPost)
+      }
+
+
+
+    }
+  }
+  return post
+}
+let postList = createPosts(users, posts)
+
+
+
+//Pensando como colocar os likes
+let primeiro = postList[0]
+primeiro['likes'] = 15
+
+for (let i = 0; i < postList.length; i++) {
+  let postAtual = postList[i]
+  let aletorio = Math.floor(Math.random() * 1000)
+
+  postAtual['likes'] = aletorio
+
+}
+
+
+
+
+
+
+
+
+function listPosts(list, referenciaHtml) {
+  referenciaHtml.innerHTML = ''
+
+
+  for (let i = 0; i < list.length; i++) {
+    let postagens = list[i]
+
+    let templateMontado = criarTemplatePosts(postagens)
+
+    referenciaHtml.appendChild(templateMontado)
+
+  }
+
+}
+listPosts(postList, usersPosts)
+console.log(postList)
+console.log(users)
+
+
+function criarTemplatePosts(post) {
+  //Gerando like aleatório  
+  let like = 0
+  for (let i = 0; i < postList.length; i++) {
+    let postAtual = postList[i]
+    let aletorio = Math.floor(Math.random() * 1000)
+    like = aletorio
+
+  }
+
+  let likes = like
+  let imagem = post.img
+  let nome = post.user
+  let info = post.info
+  let texto = post.text
+  let titulo = post.title
+  let id = post.id
+
+  let li = document.createElement('li')
+  li.classList.add('flex')
+  li.classList.add('flex-col')
+  li.classList.add('padding-left')
+
+  li.innerHTML = `
+          <div class="flex align-center gap2 botton-li">
+          <figure class="userImg">
+          <img src="${imagem}" alt="">
+          </figure>
+          <span>
+          <p class='name-User'>${nome}</p>
+          <p class='info-User'>${info}</p>
+          </span>
+          </div>
+          <div class='flex flex-col gap1'>
+          <p>${titulo}</p>
+          <p>${texto}</p>
+          <div class='flex gap1'>
+          <button class='insere-modal'id='post_${id}' data-control-modal="open-modal">Abrir Post</button>
+          <span class='flex flex-row align-center'>
+          <button class='button-like'><img src='../../assets/img/Vector (1).png'/></button> <span class='count-like'>${likes}</span>
+          </span>
+          </div>
+          </div>
+          `
+  return li
+}
+
