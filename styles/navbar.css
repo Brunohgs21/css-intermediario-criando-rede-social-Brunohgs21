@@ -13,8 +13,8 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background-color: #212529;
-    color: #FFFFFF;
+    background-color: var(--color-grey-1);
+    color: var(--color-white-fixed);
     height: 100%;
     align-items: center;
 

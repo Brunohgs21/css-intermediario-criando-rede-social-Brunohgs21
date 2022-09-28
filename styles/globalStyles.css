@@ -13,6 +13,11 @@
     --radius-1: 0.25rem;
     --font-family-1: "Inter", sans-serif;
 
+    --color--border: #DEE2E6;
+
+    --color-modal-close: #ADB5BD;
+    
+
     --padding-user: 0.625rem;
 
     --gap-user: 0.625rem;
@@ -35,15 +40,12 @@ input {
     flex-direction: row;
     align-items: flex-start;
     padding: 16px 20px;
-
     width: 90%;
     height: 52px;
-
-    background: #FFFFFF;
-
-    border: 2px solid #DEE2E6;
+    background: var(--color-white-fixed);
+    border: 2px solid var(--color--border);
     border-radius: 4px;
-    font-family: 'Inter';
+    font-family: var(--font-family-1);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -58,9 +60,9 @@ textarea {
     top: 0px;
     border-radius: 4px;
     padding: 28px 21px 29px 21px;
-    background: #FFFFFF;
-    border: 2px solid #DEE2E6;
-    font-family: 'Inter';
+    background: var(--color-white-fixed);
+    border: 2px solid var(--color--border);
+    font-family: var(--font-family-1);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

@@ -165,12 +165,12 @@ function insereInfoModal(info) {
     const pText = document.createElement('p')
 
     div1.classList = 'div-info flex align-center gap2 botton-li margin'
-    figure.classList = 'userImg'
+    figure.classList = 'user-img'
     div2.classList = 'flex flex-col gap1'
-    pTittle.classList = 'titleStyle'
-    pText.classList = 'textStyle'
-    infoNome.classList = 'name-User'
-    infoStack.classList = 'info-User'
+    pTittle.classList = 'title-style'
+    pText.classList = 'text-style'
+    infoNome.classList = 'name-user'
+    infoStack.classList = 'info-user'
 
     img.src = image
     img.alt = user

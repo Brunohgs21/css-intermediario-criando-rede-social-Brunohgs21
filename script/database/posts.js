@@ -23,7 +23,7 @@ const posts = [
     text: "A Programação Funcional é uma orientação focada na programação declarativa. Conhecendo mais a programação funcional a partir de códigos podemos nos deparar de primeira com o conceito mais central da programação funcional, que é o conceito de funções puras, isso significa que o retorno de uma função deve depender apenas dos seus parâmetros de entrada. Com classes podemos editar os valores das propriedades dos objetos criados ou ainda criar métodos para essas propriedades, ainda por cima podemos definir se vão ser públicos (vão para o objeto) ou estáticos (não são instanciados, ou seja, não vão para o objeto), e isso tem seu lado bom e ruim.",
   },
 ];
-const usersPosts = document.querySelector('.usersPosts')
+const usersPosts = document.querySelector('.users-posts')
 
 function createPosts(usuarios, listaPosts, referenciaHtml) {
   let idUsuario = 0
@@ -130,17 +130,17 @@ function criarTemplatePosts(post) {
 
   li.innerHTML = `
           <div class="flex align-center gap2 botton-li">
-          <figure class="userImg">
+          <figure class="user-img">
           <img src="${imagem}" alt="">
           </figure>
           <span>
-          <p class='name-User'>${nome}</p>
-          <p class='info-User'>${info}</p>
+          <p class='name-user'>${nome}</p>
+          <p class='info-user'>${info}</p>
           </span>
           </div>
           <div class='flex flex-col gap1'>
-          <p class='titleStyle'>${titulo}</p>
-          <p class='textStyle'>${texto}</p>
+          <p class='title-style'>${titulo}</p>
+          <p class='text-style'>${texto}</p>
           <div class='flex gap1'>
           <button class='insere-modal btn-abrirPost'id='post_${id}' data-control-modal="open-modal">Abrir Post</button>
           <span class='flex flex-row align-center'>

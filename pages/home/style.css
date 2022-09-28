@@ -19,7 +19,7 @@ header {
 }
 
 .modal {
-    background-color: #ffffff;
+    background-color: var(--color-white-fixed);
     width: 500px;
     border-radius: 4px;
     position: relative;
@@ -30,16 +30,18 @@ header {
     justify-content: flex-end;
     align-items: center;
     background-color: transparent;
+    position: relative;
 
 
 }
 
 .modal-close {
+    position: absolute;
     width: 40px;
     height: 0px;
     background-color: transparent;
     border-color: transparent;
-    color: #ADB5BD;
+    color: var(--color-modal-close);
     font-size: 20px;
     cursor: pointer;
     margin-top: 10px;
@@ -70,7 +72,7 @@ header {
     }
 }
 
-.usersPosts {
+.users-posts {
     gap: 3.125rem;
 }
 
@@ -106,7 +108,12 @@ header {
         width: 35%;
         position: fixed;
         left: 65%;
+        height: 100vh;
+    }
+    .div-sticky{
+        position: sticky;
         top: 120px;
+
     }
 
     .desktop-posts {

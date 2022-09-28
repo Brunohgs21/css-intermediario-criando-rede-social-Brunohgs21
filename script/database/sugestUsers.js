@@ -1,6 +1,6 @@
 //ID dos usuários sugeridos para seguir
 const sugestUsers = [3, 7, 6];
-const usersIds = document.querySelector('.userIds')
+const usersIds = document.querySelector('.user-ids')
 
 function separeSugestedIds(lista) {
     let sugestList = []
@@ -54,12 +54,12 @@ function criarTemplateSugests(usuario) {
     const span = document.createElement('span')
 
     div1.classList = 'sugests-style'
-    figure.classList = 'userImg'
+    figure.classList = 'user-img'
     button.classList = 'button-seguindo'
     container.classList = 'flex flex-row  justify-start gap2'
-    pUser.classList = 'name-User'
+    pUser.classList = 'name-user'
     //span.classList = 'span-button'
-    pInfo.classList = 'info-User'
+    pInfo.classList = 'info-user'
 
     button.innerText = 'Seguir'
     img.src = image
